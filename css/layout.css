@@ -24,4 +24,62 @@
 
 /* Posititoning Classes */
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+
+
+/* Quite simply, the holidays sale section should
+only take up one column, so here it is.*/
+.sale {
+  column-count: 1;
+  margin-bottom: 20px;
+}
+
+/*Meanwhile, featured-brands and archive elements
+should each take up a third of the page, leaving
+some room for a margin and also placing a margin at
+the bottom. */
+#featured-brands {
+  float: left;
+  width: 64.333333%;
+  margin-right: 2.3333%;
+  margin-bottom: 20px;
+}
+
+#archive {
+  float: right;
+  width: 33.3333%;
+  margin-bottom: 20px;
+  height: 581.3px;
+}
+
+/* Meanwhile the 3 deals elements will be dealt
+with using a 3 column structure*/
+
+.deals {
+  column-count: 3;
+  float: left;
+}
+
+/*The third element (the one labeled Bluestar
+Heels) is slightly shorter than the others. I tried
+hardfixing it to the correct length in pixels
+but it does not seem to be working for unclear
+reasons.*/
+
+/*.deals #problem-one {
+  height: 366.11px;
+}*/
+
+/* The details at the bottom of the screen
+are dealt with in another column structure.
+For some reason when I tell it to float left it
+leaves the wrapper, not sure why.*/
+
+#details .wrapper {
+  column-count: 3;
+  float;
+}
